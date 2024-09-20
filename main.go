@@ -23,4 +23,7 @@ func main() {
     http.HandleFunc("/", lb.HandleRequest)
     log.Println("Load balancer running on :8080")
     log.Fatal(http.ListenAndServe(":8080", nil))
+
+    // Alternatively, you can use the server package to start the server
+    // server.StartServer()
 }
